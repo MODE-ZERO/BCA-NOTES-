@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: #005f73;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #0a9396;
+}
+
+.nav .logo {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.nav .navlinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav .navlinks li {
+    margin-left: 20px;
+}
+
+.nav .navlinks li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav .navlinks li a:hover {
+    color: #ee9b00;
+}
+
+/* Navigation Hamburger Menu */
+.navTrigger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.navTrigger i {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    margin: 3px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Center Container Styles */
+.center-container {
+    padding-top: 80px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.year-widget {
+    background-color: #94d2bd;
+    padding: 20px;
+    margin: 10px;
+    font-weight: bold;
+    color: #005f73;
+    border-radius: 8px;
+    display: inline-block;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.year-widget:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.semester-widget {
+    background-color: #ee9b00;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    width: 120px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.semester-widget:hover {
+    background-color: #ca6702;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav .navlinks {
+        display: none;
+        flex-direction: column;
+        background-color: #005f73;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 100%;
+    }
+    .nav .navlinks li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .nav.active .navlinks {
+        display: flex;
+    }
+    .navTrigger {
+        display: flex;
+    }
+}
+

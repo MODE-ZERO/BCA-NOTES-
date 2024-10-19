@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Hub</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"><strong>My Study Hub</strong></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#notes">Notes</a></li>
+                    <li><a href="#ebooks">E-Books</a></li>
+                    <li><a href="#papers">Past Papers</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="center-container" id="widget-container">
+        <!-- Year Widgets -->
+        <div class="year-widget" id="year1">1st Year</div>
+        <div class="year-widget" id="year2">2nd Year</div>
+        <div class="year-widget" id="year3">3rd Year</div>
+
+        <!-- Semester Widgets -->
+        <a href="semester1.html">
+            <div id="semester1" class="semester-widget">Semester 1</div>
+        </a>
+        <a href="semester2.html">
+            <div id="semester2" class="semester-widget">Semester 2</div>
+        </a>
+        <a href="semester3.html">
+            <div id="semester3" class="semester-widget">Semester 3</div>
+        </a>
+        <a href="semester4.html">
+            <div id="semester4" class="semester-widget">Semester 4</div>
+        </a>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
